@@ -17,8 +17,16 @@ def new_board():
 
 # Display the board 
 def render(board):
+
+    rows = []
+    for y in range(0, Board_height):
+        row = []
+        for x in range(0, Board_width):
+            row.append(board[x][y])
+        rows.append(row)
+
     row_num = 0
-    print("  0 1 2 ")
+    
     print("  ------")
     print("")
     for row in board:
@@ -30,10 +38,16 @@ def render(board):
                 output_row += square
         print("%d|%s|" % (row_num, ' '.join(output_row)))
         row_num += 1
-    print("")
     print("  ------")
+    print("  0 1 2 ")
 
 
+# Get player's move 
+def get_move():
+
+    # get X-coordinate 
+    # get Y-coordinate 
+    pass 
 
 
 board = new_board() # Create new board 
