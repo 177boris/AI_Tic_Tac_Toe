@@ -28,8 +28,7 @@ def render(board):
     row_num = 0
     
     print("  ------")
-    print("")
-    for row in board:
+    for row in rows:
         output_row = ""
         for square in row:
             if square is None:
@@ -53,7 +52,7 @@ def get_move():
 board = new_board() # Create new board 
 
 # Test render function 
-board[1][1] = "x"
-board[0][2] = "o"
-board[1][0] = "x"
+board[0][2] = "x"
+board[1][1] = "o"
+board[0][1] = "x"
 render(board)
