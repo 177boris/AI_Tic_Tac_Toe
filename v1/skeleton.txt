@@ -1,0 +1,47 @@
+board = new_board()
+
+
+# Loop through turns until the game is over
+loop forever:
+  # TODO: need to figure out best way to do this
+  # No problem, I'll come back later.
+  current_player = ???
+
+  # Print the current state of the board
+  render(board)
+
+  # Get the move that the current player is going
+  # to make.
+  move_co_ords = get_move()
+
+  # Make the move that we calculated above
+  make_move(board, move_co_ords, current_player)
+
+  # Work out if there's a winner
+  winner = get_winner(board)
+
+  # If there is a winner, crown them the champion
+  # and exit the loop.
+  if winner is not None:
+    print "WINNER IS %s!!" % winner
+    break
+
+  # If there is no winner and the board is full,
+  # exit the loop.
+  if is_board_full(board):
+    print "IT'S A DRAW!!"
+    break
+
+  # Repeat until the game is over
+
+
+
+
+Looking over this skeleton, I notice that it is made up of about 6 main components:
+
+new_board => done. 
+render => done.
+get_move
+make_move
+get_winner
+is_board_full
