@@ -8,7 +8,7 @@ from tic_tac_toe.logic.exceptions import InvalidMove
 from tic_tac_toe.logic.models import GameState, Mark, Move
 
 class Player(metaclass=abc.ABCMeta):
-    def __init__(seelf, mark: Mark) -> None:
+    def __init__(self, mark: Mark) -> None:
         self.mark = mark 
 
     def make_move(self, game_state: GameState) -> GameState:
