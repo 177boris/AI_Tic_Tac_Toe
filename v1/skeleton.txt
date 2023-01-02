@@ -1,3 +1,5 @@
+Programming for Advanced Beginners - Robert Heaton 
+
 board = new_board()
 
 
