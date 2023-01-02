@@ -5,3 +5,6 @@ class InvalidGameState(Exception):
 
 class InvalidMove(Exception):
     """Raised when the move is invalid."""
+
+class UnknownGameScore(Exception):
+    """Game is not over yet""" 
